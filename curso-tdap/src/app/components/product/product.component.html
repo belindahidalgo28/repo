@@ -1,0 +1,13 @@
+<h1 appHighlight>{{ product.title | uppercase }}</h1>
+<div>
+<img [src]="product.image" alt="">
+</div>
+<strong>{{product.price | currency }}</strong>
+
+<p>{{product.description | slice: 0:10}}</p>
+{{date | date:'short'}}
+<button (click)="addCart()" mat-raised-button color="primary">Agregar al carrito</button>
+
+<br>
+<br>
+
